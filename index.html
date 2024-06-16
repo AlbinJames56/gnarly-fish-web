@@ -34,7 +34,7 @@
             *{
                     font-family: "Teko", sans-serif;
             }
-            li{
+            .nav li{
                 text-align: center;
   border: 1px solid #dedada;
   border-bottom: 0;
@@ -86,10 +86,61 @@
                 padding-top: 20px;
                 padding-left: 340px;
             }
+            .img-container{
+              margin-top: -35px;
+            
+            }
+            .img-container img{
+              width: 30px;
+            }
+
+            @media (max-width: 767px) {
+            .carousel-inner .carousel-item > div {
+                display: none;
+            }
+            .carousel-inner .carousel-item > div:first-child {
+                display: block;
+            }
+        }
+
+        .carousel-inner .carousel-item.active,
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            display: flex;
+        }
+
+        /* medium and up screens */
+        @media (min-width: 768px) {
+            .carousel-inner .carousel-item-end.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(25%);
+            }
+
+            .carousel-inner .carousel-item-start.active, 
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-25%);
+            }
+        }
+
+        .carousel-inner .carousel-item-end,
+        .carousel-inner .carousel-item-start { 
+            transform: translateX(0);
+        }
+
+        .footer{
+          background-image: url(./footer-bg.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        a{
+          text-decoration: none;
+        }
           </style>
     </head>
 <body>
     <!-- navbar -->
+   
+      
      <div class="row">
         <div class="col-md-5 p-4 mt-3">
             <div class="input-group" >
@@ -150,6 +201,8 @@
       <a class="nav-link disabled" aria-disabled="true"></a>
     </li>
   </ul>
+  
+</div>
     <!-- banner -->
      <section class="Banner">
         <div class="banner">
@@ -217,105 +270,300 @@
         <h1 class="text-primary text-center">FEATURED <span 
           style="color: aqua;">COLLECTION</span></h1>
           <hr>
-        <div class="shop-cards d-flex pt-5">
-            <div class="card" style="width: 18rem;">
-                <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e8ab87f2-5b55-4421-9519-b2af81187537/club-unstructured-swoosh-cap-c7lT9H.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                   <h5 class="card-title text-center">Hats</h5> 
-                   <div class="stars text-center">
-                        <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                    </div>
-                  
-                  <div class="row">
-                    <div class="col-md-6">
-                        <h5><s>34.25</s></h5>
-                        <h3>25.24</h3>
-                    </div>
-                    <div class="col-md-6 pt-2">
-                        <a href="#" class="btn btn-primary">shop now> </a>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            <div class="card" style="width: 18rem;">
-                <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e8ab87f2-5b55-4421-9519-b2af81187537/club-unstructured-swoosh-cap-c7lT9H.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                   <h5 class="card-title text-center">Hats</h5> 
-                   <div class="stars text-center">
-                        <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                    </div>
-                  
-                  <div class="row">
-                    <div class="col-md-6">
-                        <h5><s>34.25</s></h5>
-                        <h3>25.24</h3>
-                    </div>
-                    <div class="col-md-6 pt-2">
-                        <a href="#" class="btn btn-primary">shop now> </a>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            <div class="card" style="width: 18rem;">
-                <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e8ab87f2-5b55-4421-9519-b2af81187537/club-unstructured-swoosh-cap-c7lT9H.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                   <h5 class="card-title text-center">Hats</h5> 
-                   <div class="stars text-center">
-                        <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                    </div>
-                  
-                  <div class="row">
-                    <div class="col-md-6">
-                        <h5><s>34.25</s></h5>
-                        <h3>25.24</h3>
-                    </div>
-                    <div class="col-md-6 pt-2">
-                        <a href="#" class="btn btn-primary">shop now> </a>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            <div class="card" style="width: 18rem;">
-                <img src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/e8ab87f2-5b55-4421-9519-b2af81187537/club-unstructured-swoosh-cap-c7lT9H.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                   <h5 class="card-title text-center">Hats</h5> 
-                   <div class="stars text-center">
-                        <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
-                    </div>
-                  
-                  <div class="row">
-                    <div class="col-md-6">
-                        <h5><s>34.25</s></h5>
-                        <h3>25.24</h3>
-                    </div>
-                    <div class="col-md-6 pt-2">
-                        <a href="#" class="btn btn-primary">shop now> </a>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            
-           
-        </div>
-      </section>
+          <div class="img-container text-center">
+            <img src="https://www.transparentpng.com/thumb/water-drop/aR2uwa-water-drop-photos.png" alt="">
+          </div>
+     
      
 
+
+      <div class="container text-center my-3">
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                          <div class="shop-cards d-flex pt-5">
+                            <div class="card" style="width: 18rem; border: none;">
+                                <img src="https://cdn.igp.com/f_auto,q_auto,t_pnopt19prodlp/products/p-black-embroidered-cap-204217-1.jpg" alt="...">
+                                <div class="card-body">
+                                   <h5 class="card-title text-center">Hats</h5> 
+                                   <div class="stars text-center">
+                                      <i class="fa-regular fa-star"></i>
+                                      <i class="fa-regular fa-star"></i>
+                                      <i class="fa-regular fa-star"></i>
+                                      <i class="fa-regular fa-star"></i>
+                                   </div>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                        <h5><s>34.25</s></h5>
+                                        <h3>25.24</h3>
+                                    </div>
+                                    <div class="col-md-6 pt-2">
+                                        <a href="#" class="btn btn-primary">shop now> </a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="shop-cards d-flex pt-5">
+                            <div class="card" style="width: 18rem; border: none;">
+                              <img src="https://media.istockphoto.com/id/1180368138/photo/visualization-of-a-blank-t-shirt-on-a-body-without-a-man-with-shadows-on-white-background.jpg?s=612x612&w=0&k=20&c=fK4-v_piYs75-FOT4HFCwdILkH__df43g3Lh6EkorxU=" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title text-center">Men</h5> 
+                                 <div class="stars text-center">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                 </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                      <h5><s>34.25</s></h5>
+                                      <h3>25.24</h3>
+                                  </div>
+                                  <div class="col-md-6 pt-2">
+                                      <a href="#" class="btn btn-primary">shop now> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="shop-cards d-flex pt-5">
+                            <div class="card" style="width: 18rem; border: none;">
+                              <img src="https://media-photos.depop.com/b1/20549944/1522886407_ea3f3c21b7e34906b48a37814c86e703/P0.jpg" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title text-center">Women</h5> 
+                                 <div class="stars text-center">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                 </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                      <h5><s>34.25</s></h5>
+                                      <h3>25.24</h3>
+                                  </div>
+                                  <div class="col-md-6 pt-2">
+                                      <a href="#" class="btn btn-primary">shop now> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                          <div class="shop-cards d-flex pt-5">
+                            <div class="card" style="width: 18rem; border: none;">
+                              <img src="https://m.media-amazon.com/images/I/71t8ZsXvk0L._AC_UF350,350_QL80_.jpg" alt="...">
+                              <div class="card-body">
+                                 <h5 class="card-title text-center">Gear</h5> 
+                                 <div class="stars text-center">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                 </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                      <h5><s>34.25</s></h5>
+                                      <h3>25.24</h3>
+                                  </div>
+                                  <div class="col-md-6 pt-2">
+                                      <a href="#" class="btn btn-primary">shop now> </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="shop-cards d-flex pt-5">
+                        <div class="card" style="width: 18rem; border: none;">
+                          <img src="https://m.media-amazon.com/images/I/71t8ZsXvk0L._AC_UF350,350_QL80_.jpg" alt="...">
+                          <div class="card-body">
+                             <h5 class="card-title text-center">Gear</h5> 
+                             <div class="stars text-center">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                             </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                  <h5><s>34.25</s></h5>
+                                  <h3>25.24</h3>
+                              </div>
+                              <div class="col-md-6 pt-2">
+                                  <a href="#" class="btn btn-primary">shop now> </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        
+                    </div>
+                </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>      
+    </div>
+     </section>
+    
+     <!-- section instagram -->
+      <section id="instagram">
+        <h1 class="text-primary text-center">GRANLY FISH <span 
+          style="color: aqua;">#INSTAGRAM</span></h1>
+          <hr>
+          <div class="img-container text-center">
+            <img src="https://www.transparentpng.com/thumb/water-drop/aR2uwa-water-drop-photos.png" alt="">
+          </div>
+          <div class="cards d-flex">
+            <div class="card p-3" style="width: 14rem; border:none;">
+            <img src="https://cdn.outsideonline.com/wp-content/uploads/2023/05/fishing-gear-sgg23_s.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card p-3" style="width: 14rem; border:none;">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/hat/r/3/x/free-everyday-cotton-style-bucket-hat-unisex-trendy-lightweight-original-imagpxdf8htjnrgb.jpeg?q=90&crop=false" class="card-img-top" alt="...">
+          </div>
+          <div class="card p-3" style="width: 14rem; border:none;">
+            <img src="https://ae01.alicdn.com/kf/HTB1qqonJpXXXXbWXVXXq6xXFXXXh.jpg_640x640Q90.jpg_.webp" class="card-img-top" alt="...">
+          </div>
+          <div class="card p-3" style="width: 14rem; border:none;">
+            <img src="https://imgmedia.lbb.in/media/2023/04/643e42babfd7194a3cb9f85c_1681801914957.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card p-3" style="width: 14rem; border:none;">
+            <img src="https://cdn.outsideonline.com/wp-content/uploads/2019/04/25/rbff-brittneynovalsky_s.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card p-3" style="width: 14rem; border:none;">
+            <img src="https://i.pinimg.com/564x/25/ea/dc/25eadc5ea96e8fd0ecfcc6103786ab2c.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card p-3" style="width: 14rem; border:none;">
+            <img src="https://media1.popsugar-assets.com/files/thumbor/PKTfpigCeOTCVwSoIU8JDrJod1E/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2014/06/02/858/n/1922564/5118488c42a25fa1_80s-thumb.jpg" class="card-img-top" alt="...">
+          </div>
+          </div>
+          
+
+      </section>
+
     <!-- footer -->
+     <section id="footer ">
+        <div class="footer pt-5">
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-1"></div>
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase"><u>NAVIGATION</u></h5>
+        
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-body">HOME</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-body">MENS</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-body">WOMEN</a>
+                  </li>
+                  <li>
+                      <a href="#!" class="text-body">ABOUT</a>
+                    </li>
+                    <li>
+                      <a href="#!" class="text-body">CONTACT US</a>
+                    </li>
+                </ul>
+              </div>
+              <div class="col-lg-1"></div>
+              <!--Grid column-->
+        
+              <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-2"><u>SOCIAL MEDIA</u></h5>
+        
+                <ul class="list-unstyled">
+                  <li class=" mb-1">
+                    <a href="#!" class="text-body mb-1"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                  </li>
+                  <li class=" mb-1">
+                    <a href="#!" class="text-body mb-1"><i class="fa-brands fa-twitter"></i>Twitter</a>
+                  </li>
+                  <li class=" mb-1">
+                    <a href="#!" class="text-body mb-1"><i class="fa-brands fa-google"></i>Google</a>
+                  </li>
+                  <li class=" mb-1">
+                      <a href="#!" class="text-body mb-1"><i class="fa-brands fa-youtube"></i>Youtube</a>
+                  </li>
+                  <li class=" mb-1">
+                    <a href="#!" class="text-body mb-1"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                  </li>
+                </ul>
+              </div>
+        
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase"><u>HELP</u></h5>
+        
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#!" class="text-body">Customer Service</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-body">Countries We Ship To</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-body">Returns & Exchange</a>
+                  </li>
+                  <li>
+                    <a href="#!" class="text-body">Size Guide</a>
+                  </li>
+                  <li>
+                      <a href="#!" class="text-body">Wholesale Inquiries</a>
+                    </li>
+                </ul>
+              </div>
+        
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0"><u>NEWSLETTER</u></h5>
+        
+                <ul class="list-unstyled">
+                  <li class="news1">
+                    <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="EMAIL" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                      <span class="input-group-text" id="basic-addon2">&#9993;</span>
+                    </div>
+                  </li>
+      
+                  <li class="news1" style="margin-top: -50px;">
+                      <img width="200px" src="https://brevard.edu/wp-content/uploads/2019/11/kissclipart-mp-printing-cc-896-8-x-2-75-credit-card-sign-visa-d03fe24052b50333.png" alt="">
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+       
+      
+        
+          <!-- Copyright -->
+          <div class="text-center  text-secondary p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            <img width="20px" src="https://www.transparentpng.com/thumb/water-drop/aR2uwa-water-drop-photos.png" alt="">
+            © 2024 Copyright:
+            <a class="text-body  text-secondary">2017 <span style="color: blue;">GARLEY</span> <span style="color: aqua;">FISH </span>.| @ALL RIGHT RESERVED</a>
+          </div>
+        </div>
+     </section>
 </body>
 </html>
